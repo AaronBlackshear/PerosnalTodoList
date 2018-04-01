@@ -23,6 +23,7 @@ app.get('/api/todoMonthly', ctrl.getMonthly);
 app.post('/api/createDaily', ctrl.createDaily);
 app.post('/api/createWeekly', ctrl.createWeekly);
 app.post('/api/createMonthly', ctrl.createMonthly);
+app.put('/api/changeDaily/:id', ctrl.changeDaily);
 
 const port = process.env.port || 3001;
 app.listen(port, () => `Listening on port ${port}`);

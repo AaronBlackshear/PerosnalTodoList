@@ -43,5 +43,13 @@ module.exports = {
         dbInstance.create_monthly(todo)
         .then(monthlyList => res.status(200).json(monthlyList))
         .catch(err => res.status(500).json(err));
+    },
+    changeDaily: (req,res) => {
+        const dbInstance = req.app.get('db');
+        const { newTodo } = req.params;
+
+        dbInstance.change_daily(newTodo)
+        .then(daily => res.status(200).json(daily))
+        .catch(err => res.status(500).json(err));
     }
 }
