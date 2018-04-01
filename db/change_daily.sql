@@ -1,0 +1,1 @@
+UPDATE todo SET daily = $2 WHERE id = $1;

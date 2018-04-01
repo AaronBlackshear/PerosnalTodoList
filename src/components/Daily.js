@@ -49,7 +49,7 @@ export default class Daily extends Component{
             if(flag){
                 if(currentId === ind){
                     return (<div key={ind}><input onChange={e => this.editDailyTodo(e.target.value)} />
-                    <button onClick={() => this.editDB(ind + 1,this.state.newTodo)}>Confirm</button></div>);
+                    <button onClick={() => {this.editDB(ind + 1,newTodo),this.getDailyList()}}>Confirm</button></div>);
                 }
                 else{
                     return null;

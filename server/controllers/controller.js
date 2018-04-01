@@ -46,9 +46,10 @@ module.exports = {
     },
     changeDaily: (req,res) => {
         const dbInstance = req.app.get('db');
-        const { newTodo } = req.params;
+        const { newTodo } = req.body;
+        const { id } = req.params;
 
-        dbInstance.change_daily(newTodo)
+        dbInstance.change_daily(id,newTodo)
         .then(daily => res.status(200).json(daily))
         .catch(err => res.status(500).json(err));
     }
