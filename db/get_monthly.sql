@@ -1,0 +1,1 @@
+SELECT monthly FROM todo;

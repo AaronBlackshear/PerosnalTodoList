@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+  background-color: aqua;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+}
+
+li{
+  margin: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-header{
+  position: absolute;
+  left: 0;
+  margin: 0 10px;
+}

@@ -1,0 +1,1 @@
+SELECT weekly FROM todo;
